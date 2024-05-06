@@ -1,0 +1,263 @@
+/****** General ***********/
+:root
+    --text-color: #000000
+    --title-color: #101010
+    --main-color: #FFFFFF
+    // --main-bg-color: #6b5151
+    --main-bg-color: #F6F6F6
+    --primary-color: #9356DC
+    --secondary-color: #FF79DA
+    --tertiary-color: #99E2D0
+    --tertiary-text-color: #008766
+    --location-bg-color: #EAEAEA
+    --location-text-color: #353535
+    --footer-bg-color: #353535
+    --shadow-color: #000000
+    
+*
+    font-family: 'Roboto', sans-serif
+    color: var(--text-color)
+
+.shrikhand-title
+    font-family: "Shrikhand", serif
+    font-weight: 400
+    font-style: normal
+
+body
+    display: flex
+    justify-content: center
+    margin: 0px
+    background-color: var(--main-bg-color)
+
+.main-contener
+    width: 100%
+    
+h1
+    font-size: 24px
+
+h2
+    font-size: 18px
+    margin: 16px 13px 5px 13px
+
+.text
+    font-size: 17px
+    font-weight: 300
+    margin: 0px 13px 12px 13px
+
+/****** logo ***********/
+.logo1
+    font-size: 30px
+    color: var(--title-color)
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15)
+    height: 63px
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: var(--main-color)
+
+header
+    background-color: var(--location-bg-color)
+
+
+.location
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    height: 50px
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 16px
+    font-weight: 500
+    color: var(--location-text-color)
+    gap: 17px
+
+/****** Header "Reserver" ***********/
+.p-header
+    font-weight: 300
+    font-size: 18px
+    color: var(--location-text-color)
+    text-align: center
+
+.announcement h1
+    margin-left: 35px
+    margin-right: 35px
+    margin-top: 0px
+    text-align: center
+
+
+.announcement
+    display: flex
+    flex-direction: column
+    align-content: center
+    padding: 34px 34px 25px 34px
+    align-items: center
+
+.btn
+    height: 50px
+    border-radius: 25px
+    border: none
+    font-size: 16px
+    font-weight: 500
+    color: #FFFFFF
+    background: linear-gradient(193.33deg, var(--primary-color) -11.44%, var(--secondary-color) 123.93%)
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25)
+
+.big-btn
+    width: 218px
+    margin: 30px
+
+/****** "fonctionnement" ***********/
+.functioning
+    background-color: var(--main-color)
+    padding: 25px 20px 60px 20px
+
+//---- pour ecran large : à faire plus tard----    
+// .functioning-large
+//     width: 75%
+//     margin: auto
+
+
+.zone-explanation
+    display: flex
+    flex-wrap: wrap    
+    justify-content: start
+    gap: 25px
+    
+.explanation
+    p
+            margin: 0px
+            font-size: 16px
+            font-weight: 500
+            align-content: center
+    .icon
+            align-content: center
+            img
+                    height: 20px
+                    align-content: center
+    background: var(--main-bg-color)
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15)
+    border-radius: 20px
+    box-sizing: border-box
+    width: 323px
+    height: 72px
+    position: absolute
+    margin-left: 12px
+    display: flex
+    padding-left: 35px
+    gap: 20px
+
+.card-explanation
+    display: flex
+    width: 335px
+    height: 72px
+
+.number
+    p
+            font-size: 14px
+            color: #FFFFFF
+            font-weight: 500
+            margin: 0px
+            padding: 0px
+            align-content: center
+    background-color: var(--primary-color)
+    width: 24px
+    height: 24px
+    border-radius: 12px
+    position: relative
+    top: 25px
+    display: flex
+    justify-content: center
+
+/****** "Restaurants" ***********/
+.zone-restaurants
+    display: flex
+    flex-wrap: wrap    
+    justify-content: start
+    gap: 18px
+    
+.restaurants
+    padding: 25px 17px 60px 17px
+
+//---- pour ecran large : à faire plus tard----    
+// .functioning-large
+//     width: 75%
+//     margin: auto
+
+.card-restaurant
+    display: flex
+    flex-direction: column
+    width: 340px
+    height: 247px
+    box-sizing: border-box
+
+.photo-restaurant
+    img
+        width: 100%
+        height: 170px
+        object-fit: cover
+        border-radius: 15px 15px 0px 0px
+    display: flex
+
+.content
+    display: flex
+    height: 100%
+    justify-content: space-between
+    background-color: var(--main-color)
+    border-radius: 0px 0px 15px 15px
+    position: relative
+
+.heart
+    img
+        width: 22px
+        margin-top: 10px
+    align-content: center
+    margin-right: 25px
+
+.new
+    position: relative
+    top: -245+15px
+    left: 340-80-15px
+    width: 80px
+    height: 29px
+    background-color: var(--tertiary-color)
+    color: var(--tertiary-text-color)
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 14px
+    font-weight: 500
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15)
+    border-radius: 2px
+
+.off
+    display: none
+
+/****** "Footer" ***********/
+
+footer
+    color: #FFFFFF
+    background-color: var(--footer-bg-color)
+    padding: 22px 25px 22px 25px
+    display: flex
+    flex-direction: column
+
+.logo2
+    font-size: 18px
+    color: #FFFFFF
+    display: flex
+    padding: 0px 0px 16px 0px
+
+ul
+    list-style-type: none
+    padding: 0px
+    margin: 0px
+    gap: 7px
+
+li
+    color: #FFFFFF
+    font-size: 16px
+    padding: 0px 0px 7px 0px
+
+li img
+    padding-right: 11px
+
+
