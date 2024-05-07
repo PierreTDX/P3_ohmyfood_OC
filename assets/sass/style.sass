@@ -140,9 +140,8 @@ header
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15)
     border-radius: 20px
     box-sizing: border-box
-    width: 323px
+    width: 100%
     height: 72px
-    position: absolute
     margin-left: 12px
     display: flex
     padding-left: 35px
@@ -152,6 +151,7 @@ header
     display: flex
     width: 335px
     height: 72px
+    position: relative
 
 .number
     p
@@ -165,7 +165,8 @@ header
     width: 24px
     height: 24px
     border-radius: 12px
-    position: relative
+    position: absolute
+    left: 0px
     top: 25px
     display: flex
     justify-content: center
@@ -191,6 +192,7 @@ header
     width: 340px
     height: 247px
     box-sizing: border-box
+    position: relative
 
 .photo-restaurant
     img
@@ -199,6 +201,7 @@ header
         object-fit: cover
         border-radius: 15px 15px 0px 0px
     display: flex
+    position: relative
 
 .content
     display: flex
@@ -206,21 +209,19 @@ header
     justify-content: space-between
     background-color: var(--main-color)
     border-radius: 0px 0px 15px 15px
-    position: relative
 
 .heart
     img
         width: 22px
-    align-content: center
-    margin-right: 25px
-    position: relative
-    left: 340-22-20px
-    top: -80px
+    width: 22px
+    position: absolute
+    right: 15px
+    top: 190px
 
 .new
-    position: relative
-    top: -245+15px
-    left: 340-80-15px
+    position: absolute
+    top: 15px
+    right: 15px
     width: 80px
     height: 29px
     background-color: var(--tertiary-color)
