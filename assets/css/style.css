@@ -236,17 +236,14 @@ header {
   border-radius: 0px 0px 15px 15px;
 }
 
-.heart-original {
+.heart-position {
   width: 24px;
   position: absolute;
   right: 15px;
   top: 190px;
 }
-.heart-original img {
-  width: 24px;
-}
 
-.heart-position {
+.heart-original {
   width: 24px;
   position: absolute;
   right: 15px;
