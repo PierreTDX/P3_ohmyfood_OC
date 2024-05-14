@@ -52,4 +52,14 @@ a {
   text-decoration: none;
 }
 
+.heart-object {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-object {
+  width: 100%;
+  height: auto;
+}
+
 /*# sourceMappingURL=general.css.map */

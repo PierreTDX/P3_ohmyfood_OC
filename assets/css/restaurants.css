@@ -53,6 +53,16 @@ a {
   text-decoration: none;
 }
 
+.heart-object {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-object {
+  width: 100%;
+  height: auto;
+}
+
 /*******navbar********/
 .logo1 {
   font-size: 30px;
