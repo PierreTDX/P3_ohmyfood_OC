@@ -1,0 +1,142 @@
+/****** General ***********/
+@use 'general.sass'
+
+/*******navbar********/
+.logo1
+    font-size: 30px
+    color: var(--title-color)
+    height: 63px
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: var(--main-color)
+
+header
+    background-color: var(--location-bg-color)
+    position: relative
+    img
+        position: absolute
+        left: 23px
+        top: 31-8px
+
+/********retaurant picture********/
+.restaurant-picture
+    img
+        width: 100%
+        height: 275px
+        object-fit: cover
+
+/********zone menu*******/
+.main-contener
+    background-color: var(--main-color)
+
+.name-restaurant
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-left: 17px
+    padding-right: 41px
+
+h3    
+  font-size: 28px
+  color: var(--title-color)
+
+h4
+    font-size: 16px
+    font-weight: 300
+    text-transform: uppercase
+    margin-top: 8px
+    margin-bottom: 8px
+
+h2
+    font-size: 500
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+
+.text
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+
+.menu-name
+    display: flex
+    flex-direction: column
+
+hr
+    background-color: var(--tertiary-color)
+    display: flex
+    border: none
+    height: 3px
+    width: 40px
+    margin: 0px
+    margin-bottom: 12px
+
+.all-menu
+    background-color: var(--main-bg-color)
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    margin-left: auto
+    margin-right: auto
+    border-radius: 35px 35px 0px 0px
+    position: relative
+    top: -40px
+
+.menu
+    padding-left: 13px
+    padding-right: 13px
+    margin-bottom: 30px
+
+.card-menu
+    background-color: var(--main-color)
+    border-radius: 15px
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1)
+    display: flex
+    justify-content: space-between
+    margin-bottom: 12px
+    width: 100%
+
+.content-menu
+    width: 100%
+//         white-space: nowrap
+//         overflow: hidden
+//         text-overflow: ellipsis
+
+.right
+    display: flex
+
+.price
+    justify-content: start 
+    align-content: end   
+    margin-bottom: 13px
+
+.check
+    display: none
+
+a:hover .check
+    display: block
+    background-color: var(--tertiary-color)
+    border-radius: 0px 15px 15px 0px
+    width: 59px
+    display: flex
+    img
+        width: 20px
+        margin: auto
+
+@media (min-width: 1055px)
+
+    .all-menu
+        width: 1055px
+        margin-left: auto
+        margin-right: auto
+
+    .name-restaurant
+        justify-content: center
+        padding: 0px
+        gap : 24px
+    
+    .menu
+        width: 634px
+        margin: auto
