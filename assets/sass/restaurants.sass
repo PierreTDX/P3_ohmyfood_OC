@@ -101,32 +101,83 @@ hr
     width: 100%
 
 .content-menu
-    width: 100%
-//         white-space: nowrap
-//         overflow: hidden
-//         text-overflow: ellipsis
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
 
 .right
     display: flex
+    // position: relative
 
 .price
     justify-content: start 
     align-content: end   
     margin-bottom: 13px
 
-.check
-    display: none
 
-a:hover .check
-    display: block
+.check
     background-color: var(--tertiary-color)
     border-radius: 0px 15px 15px 0px
     width: 59px
+    height: 75px
     display: flex
+    // position: absolute
+    // right: -220
+    // opacity: 1
+    // transition: right 0.5s ease-out, opacity 0.5s ease-out
     img
         width: 20px
         margin: auto
     
+a:hover .check
+    width: 0px
+    transition: 0.5s
+    img
+        display: none
+
+
+// .check
+//     display: block
+
+// a:hover .check
+//     display: 
+//     background-color: var(--tertiary-color)
+//     border-radius: 0px 15px 15px 0px
+//     width: 59px
+//     height: 75px
+//     display: flex
+//     // position: absolute
+//     // right: -220
+//     // opacity: 1
+//     // transition: right 0.5s ease-out, opacity 0.5s ease-out
+//     img
+//         width: 20px
+//         margin: auto
+
+
+// @keyframes slideIn 
+//   0% 
+//     transform: translateX(100%)
+//   100% 
+//     transform: translateX(0)
+
+// .check 
+//   display: none
+//   animation: slideIn 0.5s ease forwards
+
+// a:hover .check 
+//   display: block
+//   background-color: var(--tertiary-color)
+//   border-radius: 0px 15px 15px 0px
+//   width: 59px
+//   height: 75px
+//   display: flex
+//   justify-content: center
+//   align-items: center
+
+
+
+
 /********bouton******/
 form
     display: flex

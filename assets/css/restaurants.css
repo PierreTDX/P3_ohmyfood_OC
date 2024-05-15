@@ -60,7 +60,7 @@ a {
 
 .footer-object {
   width: 100%;
-  height: auto;
+  height: 180px;
 }
 
 /*******navbar********/
@@ -177,7 +177,9 @@ hr {
 }
 
 .content-menu {
-  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .right {
@@ -191,19 +193,23 @@ hr {
 }
 
 .check {
-  display: none;
-}
-
-a:hover .check {
-  display: block;
   background-color: var(--tertiary-color);
   border-radius: 0px 15px 15px 0px;
   width: 59px;
+  height: 75px;
   display: flex;
 }
-a:hover .check img {
+.check img {
   width: 20px;
   margin: auto;
+}
+
+a:hover .check {
+  width: 0px;
+  transition: 0.5s;
+}
+a:hover .check img {
+  display: none;
 }
 
 /********bouton******/
