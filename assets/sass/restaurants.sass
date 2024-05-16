@@ -1,6 +1,9 @@
 /****** General ***********/
 @use 'general.sass'
 
+/****** "Footer" ***********/
+@use 'footer.sass'
+
 /*******navbar********/
 .logo1
     font-size: 30px
@@ -99,6 +102,7 @@ hr
     justify-content: space-between
     margin-bottom: 12px
     width: 100%
+    cursor: pointer
 
 .content-menu
     white-space: nowrap
@@ -107,7 +111,6 @@ hr
 
 .right
     display: flex
-    // position: relative
 
 .price
     justify-content: start 
@@ -118,65 +121,19 @@ hr
 .check
     background-color: var(--tertiary-color)
     border-radius: 0px 15px 15px 0px
-    width: 59px
+    width: 0px
     height: 75px
     display: flex
-    // position: absolute
-    // right: -220
-    // opacity: 1
-    // transition: right 0.5s ease-out, opacity 0.5s ease-out
     img
         width: 20px
         margin: auto
+        display: none
     
-a:hover .check
-    width: 0px
+.card-menu:hover .check
+    width: 59px
     transition: 0.5s
     img
-        display: none
-
-
-// .check
-//     display: block
-
-// a:hover .check
-//     display: 
-//     background-color: var(--tertiary-color)
-//     border-radius: 0px 15px 15px 0px
-//     width: 59px
-//     height: 75px
-//     display: flex
-//     // position: absolute
-//     // right: -220
-//     // opacity: 1
-//     // transition: right 0.5s ease-out, opacity 0.5s ease-out
-//     img
-//         width: 20px
-//         margin: auto
-
-
-// @keyframes slideIn 
-//   0% 
-//     transform: translateX(100%)
-//   100% 
-//     transform: translateX(0)
-
-// .check 
-//   display: none
-//   animation: slideIn 0.5s ease forwards
-
-// a:hover .check 
-//   display: block
-//   background-color: var(--tertiary-color)
-//   border-radius: 0px 15px 15px 0px
-//   width: 59px
-//   height: 75px
-//   display: flex
-//   justify-content: center
-//   align-items: center
-
-
-
+        display: block
 
 /********bouton******/
 form
@@ -196,7 +153,6 @@ form
     opacity: 1
     transition: opacity 0.7s
 
-
 .big-btn
     width: 186px
     margin: 30px
@@ -206,7 +162,23 @@ form
     // background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, var(--primary-color) -5.2%, var(--secondary-color) 110.74%)
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35)
 
+/**** faire apparaître par groupe “Entrée”, “Plat” et “Dessert”.*****/
+.all-menu
+  .menu
+    opacity: 0
+    animation: fadeIn 2s forwards
+    &:nth-child(2)
+      animation-delay: 0.5s
+    &:nth-child(3)
+      animation-delay: 1s
+    &:nth-child(4)
+      animation-delay: 1.5s
 
+@keyframes fadeIn
+  from
+    opacity: 0
+  to
+    opacity: 1
 
 @media (min-width: 1055px)
 

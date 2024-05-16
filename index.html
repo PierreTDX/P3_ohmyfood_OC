@@ -15,6 +15,13 @@
 </head>
 
 <body>
+
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+<!-- affichage de la page qui suit apres le loader -->
+    <div id="content">
     <div class="main-contener">
         <header>
             <div class="shrikhand-title logo1">ohmyfood</div>
@@ -23,9 +30,9 @@
         <section class="announcement">
             <h1>Réservez le menu qui vous convient</h1>
             <span class="p-header">Découvrez des restaurants d’exception, sélectionnés par nos soins.</span>
-            <form action="#restaurants">
+            <a href="#restaurants">
             <button class="btn big-btn">Explorer nos restaurants</button>
-            </form>
+            </a>
         </section>
         <section class="functioning">
             <div class="functioning-large">
@@ -158,10 +165,10 @@
                 </div>
             </div>
         </section>
-        <div>
+        <!-- <div>
             <object class="footer-object" type="text/html" data="assets/components/footer/footer.html"></object>
-        </div>
-        <!-- <footer>
+        </div> -->
+        <footer>
             <div class="shrikhand-title logo2">ohmyfood</div>
             <ul>
                 <li><img src="assets/images/icons/fork.svg" alt="icon fourchette">Proposer un restaurant</li>
@@ -169,9 +176,10 @@
             </ul>
             <ul>
                 <li>Mentions légales</li>
-                <li>Contact</li>
+                <a href="mailto:mail@gmail.com"><li>Contact</li></a>
             </ul>
-        </footer> -->
+        </footer>
+    </div>
     </div>
 </body>
 

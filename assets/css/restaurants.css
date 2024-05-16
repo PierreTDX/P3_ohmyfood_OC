@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /****** General ***********/
 :root {
   --text-color: #000000;
@@ -58,11 +59,62 @@ a {
   height: 24px;
 }
 
-.footer-object {
-  width: 100%;
-  height: 180px;
+/****** "Footer" ***********/
+footer {
+  color: #FFFFFF;
+  background-color: var(--footer-bg-color);
+  padding: 22px 25px 12px 25px;
+  display: flex;
+  flex-direction: column;
 }
 
+.logo2 {
+  font-size: 18px;
+  color: #FFFFFF;
+  display: flex;
+  padding: 0px 0px 16px 0px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  gap: 7px;
+}
+
+li {
+  color: #FFFFFF;
+  font-size: 16px;
+  padding: 0px 0px 7px 0px;
+}
+
+li img {
+  padding-right: 11px;
+}
+
+@media (min-width: 1055px) {
+  footer {
+    flex-direction: row-reverse;
+  }
+  .logo2 {
+    margin-right: 45px;
+    margin-left: 80px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    padding-left: 20px;
+  }
+  li {
+    padding-left: 5px;
+  }
+  ul:nth-child(2) {
+    order: 1;
+  }
+}
 /*******navbar********/
 .logo1 {
   font-size: 30px;
@@ -174,6 +226,7 @@ hr {
   justify-content: space-between;
   margin-bottom: 12px;
   width: 100%;
+  cursor: pointer;
 }
 
 .content-menu {
@@ -195,21 +248,22 @@ hr {
 .check {
   background-color: var(--tertiary-color);
   border-radius: 0px 15px 15px 0px;
-  width: 59px;
+  width: 0px;
   height: 75px;
   display: flex;
 }
 .check img {
   width: 20px;
   margin: auto;
+  display: none;
 }
 
-a:hover .check {
-  width: 0px;
+.card-menu:hover .check {
+  width: 59px;
   transition: 0.5s;
 }
-a:hover .check img {
-  display: none;
+.card-menu:hover .check img {
+  display: block;
 }
 
 /********bouton******/
@@ -242,6 +296,29 @@ form {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }
 
+/**** faire apparaître par groupe “Entrée”, “Plat” et “Dessert”.*****/
+.all-menu .menu {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+.all-menu .menu:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.all-menu .menu:nth-child(3) {
+  animation-delay: 1s;
+}
+.all-menu .menu:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @media (min-width: 1055px) {
   .all-menu {
     width: 1055px;
