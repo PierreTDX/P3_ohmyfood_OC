@@ -1,57 +1,39 @@
 body {
-    margin: 0;
-    overflow-y: hidden;
+  margin: 0;
 }
 
 .heart-checkbox {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-  }
-  
-  .heart-checkbox input {
-    display: none; /* Cacher l'élément de saisie par défaut */
-  }
-  
-  .heart {
-    position: relative;
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    background: url("Like1.png") no-repeat center;
-  }
-  
-  .heart:before,
-  .heart:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 0;
-    transform-origin:center;
-    transition: transform 0.3s;
-  }
-  
-  .heart:after {
-    background: url("Like2.png") no-repeat center;
-    transform: scaleY(0);
-  }
-  
-  .heart-checkbox input:checked + .heart:before {
-    transform: scaleY(0);
-  }
-  
-  .heart-checkbox input:checked + .heart:after {
-    transform: scaleY(1);
-  }
-  
-  /*changement image coeur au survol*/
-  .heart-checkbox:hover .heart:before {
-    transform: scaleY(0);
-  }
-  
-  .heart-checkbox:hover .heart:after {
-    transform: scaleY(1);
-  }
+  cursor: pointer;
+}
+
+.heart-checkbox input {
+  display: none; /* Cacher l'élément de saisie par défaut */
+}
+
+.heart {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: url("Like1.png") no-repeat;
+}
+
+.heart:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: center;
+  transition: transform 0.3s;
+  background: url("Like2.png") no-repeat;
+  transform: scaleX(0);
+}
+
+input:checked + .heart:after {
+  transform: scaleX(1);
+}
+
+.heart-checkbox:hover .heart:after {
+  transform: scaleX(1);
+}
