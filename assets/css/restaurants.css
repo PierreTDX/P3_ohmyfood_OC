@@ -88,6 +88,12 @@ li {
   padding: 0px 0px 7px 0px;
 }
 
+a {
+  color: #FFFFFF;
+  font-size: 16px;
+  padding: 0px 0px 7px 0px;
+}
+
 li img {
   padding-right: 11px;
 }
@@ -170,7 +176,7 @@ h4 {
 }
 
 h2 {
-  font-size: 500;
+  font-weight: 500;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
