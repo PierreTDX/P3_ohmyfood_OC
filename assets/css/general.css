@@ -1,0 +1,60 @@
+:root {
+  --text-color: #000000;
+  --title-color: #101010;
+  --main-color: #FFFFFF;
+  --main-bg-color: #F6F6F6;
+  --primary-color: #9356DC;
+  --secondary-color: #FF79DA;
+  --tertiary-color: #99E2D0;
+  --tertiary-text-color: #008766;
+  --location-bg-color: #EAEAEA;
+  --location-text-color: #353535;
+  --footer-bg-color: #353535;
+  --shadow-color: #000000;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+}
+
+.shrikhand-title {
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0px;
+  background-color: var(--main-bg-color);
+}
+
+.main-contener {
+  width: 100%;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 16px 13px 5px 13px;
+}
+
+.text {
+  font-size: 17px;
+  font-weight: 300;
+  margin: 0px 13px 12px 13px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.heart-object {
+  width: 24px;
+  height: 24px;
+}
+
+/*# sourceMappingURL=general.css.map */

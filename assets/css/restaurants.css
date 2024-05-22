@@ -255,6 +255,7 @@ hr {
   background-color: var(--tertiary-color);
   border-radius: 0px 15px 15px 0px;
   width: 0px;
+  transition: 0.5s;
   height: 75px;
   display: flex;
 }
